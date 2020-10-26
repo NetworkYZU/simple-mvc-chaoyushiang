@@ -13,10 +13,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <%
-            Student student=(Student)request.getAttribute("student");
-        %>
-        <h1>Hello, <%=student.getName()%></h1>
+        <jsp:useBean id="student" type="lendle.courses.network.simplemvc.Student" scope="request"/>
+        <h1>Hello!<jsp:getProperty name="student" property="name"/></h1>
         注意您的分數！
+
     </body>
 </html>

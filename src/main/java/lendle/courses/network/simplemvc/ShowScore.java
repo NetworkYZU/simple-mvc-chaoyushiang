@@ -31,7 +31,7 @@ public class ShowScore extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String id=request.getParameter("id");
-        String address=null;
+//        String address=null;
         //按照分數選擇頁面
 //        request.getRequestDispatcher(address).forward(request, response);
         
